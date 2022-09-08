@@ -1,0 +1,193 @@
+@mixin footer(){
+    background-image: linear-gradient(50deg, rgba(182,80,242,1) 6%, rgba(230,201,247,1) 41%);;
+    padding: 5px;
+    border-style: solid;
+}
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+#grilla {
+background-image: url("../images/fondo-banner-humo-purpura-estetico_53876-129044.png");
+font-family: sans-serif;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto auto auto auto auto;
+}
+
+.caja {
+grid-column: 1/4;
+}
+
+header {
+border-style: solid;
+margin: 0%;
+background-color: #e6c9f7;
+width: 100%;
+}
+header img {
+    margin: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+header h1 {
+    font-weight: 600;
+    font-family: 'Indie Flower';
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+    transition: 2s;
+}
+
+header h1:hover{
+        font-size: 50px;
+        padding: 35px;
+}
+    
+
+nav {
+    background-color: #e6c9f7;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+        list-style: none;
+        margin-left: 2px;
+        margin-bottom: 10px;
+        padding: auto;
+        display: inline;
+}
+nav ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 600;
+        margin: 4px;
+        font-size: 20px;
+        font-family: 'Indie Flower';
+}
+nav ul li a:hover {
+            color: #ffffff;
+        }
+    
+.caja2 {
+    @extend .caja;
+}
+
+h2 {
+    margin: 25px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.caja3 {
+    @extend .caja;
+}
+
+p {
+    margin: 8px;
+}
+
+.caja4 {
+    @extend .caja;
+    text-align: center;
+}
+
+.foto {
+    width: 250px;
+    margin: 10px;
+}
+
+.caja5 {
+    @extend .caja;
+}
+
+.caja6 {
+    @extend .caja;
+}
+footer {
+    @include footer();
+}
+footer p {
+            color: #000000;
+            font-family: "Indie Flower";
+            text-align: center;
+}
+.trata {
+    margin: 10px;
+}
+
+h3 {
+    margin: 25px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.ubi {
+    height: 250px;
+    width: 98%;
+    margin: 10PX;
+}
+
+$mapa:(
+    fondo1: pink,
+    fondo2: green,
+    fondo3: lightblue
+);
+
+.caja7 {
+    @extend .caja;
+    text-align: center;
+}
+
+.caja8 {
+    @extend .caja;
+
+}
+
+.caja9 {
+    @extend .caja;
+}
+.caja10 {
+    @extend .caja;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.caja11 {
+    @extend .caja;
+    text-align: center;
+    margin: 10px;
+}
+iframe{
+    width:560px; 
+    height:315px;
+}
+
+.mueva{
+    animation-name: mianimacion;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    position: relative;
+}
+$mapa: (
+    fondo1: pink,
+    fondo2: rgb(181, 231, 181),
+    fondo3: lightblue,
+);
+@each $fondo, $color in $mapa {
+    .card--#{$fondo}{
+        background-color: $color;
+    }
+}
+@keyframes mianimacion {
+    0% {left: 0; top: 0px; }
+    25%{left: 60px; top: 0px;}
+    50%{left: -60px; top: 0px;}
+    100% {left: 0; top: 0px;}
+}
+
