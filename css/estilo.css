@@ -4,19 +4,18 @@
   box-sizing: border-box; }
 
 #grilla {
-  background-image: url("../images/fondo-banner-humo-purpura-estetico_53876-129044.png");
-  font-family: sans-serif;
+  background-color: #ffebeb;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto auto auto; }
 
-.caja, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10, .caja11 {
+.caja, .caja2, .caja3, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10, .caja11 {
   grid-column: 1/4; }
 
 header {
   border-style: solid;
   margin: 0%;
-  background-color: #e6c9f7;
+  background-color: #f6ccd0;
   width: 100%; }
 
 header img {
@@ -38,7 +37,7 @@ header h1:hover {
   padding: 35px; }
 
 nav {
-  background-color: #e6c9f7;
+  background-color: #f6ccd0;
   display: flex;
   justify-content: right; }
 
@@ -53,7 +52,7 @@ nav ul li a {
   text-decoration: none;
   color: #000000;
   font-weight: 600;
-  margin: 4px;
+  margin: 3px;
   font-size: 20px;
   font-family: 'Indie Flower'; }
 
@@ -68,21 +67,22 @@ h2 {
 p {
   margin: 8px; }
 
-.caja4 {
-  text-align: center; }
-
 .foto {
   width: 250px;
   margin: 10px; }
 
+.foto3 {
+  width: 250px;
+  margin: 10px; }
+
 footer {
-  background-image: linear-gradient(50deg, #b650f2 6%, #e6c9f7 41%);
+  background-color: #f6ccd0;
   padding: 5px;
   border-style: solid; }
 
 footer p {
   color: #000000;
-  font-family: "Indie Flower";
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center; }
 
 .trata {
@@ -113,6 +113,49 @@ h3 {
 iframe {
   width: 560px;
   height: 315px; }
+
+article {
+  justify-content: center;
+  text-align: center; }
+
+iframe {
+  width: 100%;
+  height: 450px; }
+
+.container-boton {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 1px;
+  padding: 25px;
+  transition: ease 0.3s; }
+
+.container-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.boton {
+  width: 50px;
+  transition: 1s; }
+
+.container-boton2 {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 19px;
+  right: 1px;
+  padding: 25px;
+  margin-right: 60px;
+  transition: ease 0.3s; }
+
+.container-boton2:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.boton2 {
+  width: 50px;
+  transition: 1s; }
 
 .mueva {
   animation-name: mianimacion;
